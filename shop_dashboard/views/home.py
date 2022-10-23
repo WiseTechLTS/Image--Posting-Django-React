@@ -1,7 +1,7 @@
-from django.shortcuts import render , redirect , HttpResponseRedirect
-from store.models.product import Products
-from store.models.category import Category
+from django.shortcuts import HttpResponseRedirect, redirect, render
 from django.views import View
+from shop_dashboard.models.category import Category
+from shop_dashboard.models.product import Products
 
 
 # Create your views here.
@@ -56,5 +56,3 @@ def store(request):
 
     print('you are : ', request.session.get('email'))
     return render(request, 'index.html', data)
-
-
