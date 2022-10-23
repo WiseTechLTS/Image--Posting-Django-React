@@ -28,6 +28,7 @@ sqlparse = "*"
 toml = "*"
 virtualenv = "*"
 wrapt = "*"
+mysqlclient = "*"
 
 [dev-packages]
 

@@ -1,1 +1,25 @@
- appdirs asgiref astroid colorama distlib Django django-cors-headers django-extensions django-filter django-rest-auth djangorestframework djangorestframework-simplejwt filelock isort lazy-object-proxy mccabe Pillow pylint pytz six sqlparse toml virtualenv wrapt
+appdirs
+asgiref
+astroid
+colorama
+distlib
+Django
+django-cors-headers
+django-extensions
+django-filter
+django-rest-auth
+djangorestframework
+djangorestframework-simplejwt
+filelock
+isort
+lazy-object-proxy
+mccabe
+Pillow
+pylint
+pytz
+six
+sqlparse
+toml
+mysqlclient
+virtualenv
+wrapt
