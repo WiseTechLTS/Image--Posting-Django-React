@@ -8,8 +8,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'wr252ttaseafwetrwtqysadfwrg+2rim1nu!2edr=bp0i^*he(t2!7ul_c356@zh=)(pcii&&((sw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -64,19 +62,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'artwork_application_backend.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'artwork_application_database',
-        'USER': 'root',
-        'PASSWORD': 'Root',
-        'HOST': 'localhost',
-        'PORT': '3306',
-    }
-}
 
 
 # Password validation
@@ -122,3 +107,8 @@ MEDIA_ROOT = BASE_DIR
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+try:
+    from artwork_application_backend.local_settings import *
+except ImportError:
+    pass
