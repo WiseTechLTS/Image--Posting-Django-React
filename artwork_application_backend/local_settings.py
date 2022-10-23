@@ -8,7 +8,7 @@ SECRET_KEY = 'asdf&^*&^#9u9837298798YI*(&^(*&#O4riuoiUY978fyw4+2rim1nu!2edr=bp0i
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'application_database',
+        'NAME': 'artwork_database',
         'USER': 'root',
         'PASSWORD': 'Root',
         'HOST': 'localhost',
