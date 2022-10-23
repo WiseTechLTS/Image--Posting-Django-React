@@ -1,5 +1,5 @@
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'wr252ttaseafwetrwtqysadfwrg+2rim1nu!2edr=bp0i^*he(t2!7ul_c356@zh=)(pcii&&((sw'
+SECRET_KEY = 'asdf&^*&^#9u9837298798YI*(&^(*&#O4riuoiUY978fyw4+2rim1nu!2edr=bp0i^*he(t2!7ul_c356@zh=)(pcii&&((sw'
 
 
 # Database
@@ -8,7 +8,7 @@ SECRET_KEY = 'wr252ttaseafwetrwtqysadfwrg+2rim1nu!2edr=bp0i^*he(t2!7ul_c356@zh=)
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'artwork_application_database',
+        'NAME': 'application_database',
         'USER': 'root',
         'PASSWORD': 'Root',
         'HOST': 'localhost',

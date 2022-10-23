@@ -1,7 +1,7 @@
 from django.shortcuts import HttpResponseRedirect, redirect, render
 from django.views import View
-from shop_dashboard.models.category import Category
-from shop_dashboard.models.product import Products
+from shop.models.category import Category
+from shop.models.product import Products
 
 
 # Create your views here.
@@ -36,9 +36,9 @@ class Index(View):
 
     def get(self , request):
         # print()
-        return HttpResponseRedirect(f'/store{request.get_full_path()[1:]}')
+        return HttpResponseRedirect(f'/shop{request.get_full_path()[1:]}')
 
-def store(request):
+def shop(request):
     cart = request.session.get('cart')
     if not cart:
         request.session['cart'] = {}
@@ -48,7 +48,7 @@ def store(request):
     if categoryID:
         products = Products.get_all_products_by_categoryid(categoryID)
     else:
-        products = Products.get_all_products();
+        products = Products.get_all_products()
 
     data = {}
     data['products'] = products

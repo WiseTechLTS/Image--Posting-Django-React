@@ -27,7 +27,7 @@ INSTALLED_APPS = [
     # Locally installed apps
     'corsheaders', # For cross origin resource sharing
     'rest_framework', # For rest api
-    'shop_dashboard', # For shop dashboard
+    'shop', # For shop dashboard
 ]
 
 MIDDLEWARE = [
